@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag stakely:$GITHUB_REF_NAME
+      run: docker build . --file Dockerfile --tag stakely:stafi-node:v0.5.2  --build-arg release_tag=v0.5.2
